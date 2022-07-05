@@ -16,8 +16,6 @@ export default function Item(){
         if (personaFisica === true) {
           res([
             { id: 1, name: "Gabinete", price: 10000 },
-            { id: 2, name: "Gabinete 2", price: 15000 },
-            { id: 3, name: "Gabinete 3", price: 20000 },
           ]);
         } else {
           rej("No hay productos");
