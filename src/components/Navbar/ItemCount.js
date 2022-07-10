@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./ItemList.css";
 
 export default function ItemCount(){
   console.log("render")
@@ -43,16 +43,12 @@ export default function ItemCount(){
   
   return(
       <div>
-          Producto:
-          <p>MAXIMO STOCK: {auxStock}</p>
+          {/* <p>MAXIMO STOCK: {auxStock}</p> */}
           <p>Cantidad de Productos para la compra: {auxCompra}</p>
       <div>
-          <button onClick={() => aumentarStock()}
-          style= {{border: "1px solid red", width: "200px"}}>+</button>
-          <button onClick={() => disminuirStock()}
-          style= {{border: "1px solid red", width: "200px"}}>-</button>
-          <button onClick={() => finalCompra()}
-          style= {{border: "1px solid red", width: "200px"}}>Comprar</button>
+          <a onClick={() => aumentarStock()}>+</a>
+          <a onClick={() => disminuirStock()}>-</a>
+          <a onClick={() => finalCompra()}>Añadir al carrito</a>
       </div>
       </div>
   );

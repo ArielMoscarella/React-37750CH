@@ -1,3 +1,4 @@
+import { imageListClasses } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 
@@ -15,7 +16,9 @@ export default function Item(){
       setTimeout(() => {
         if (personaFisica === true) {
           res([
-            { id: 1, name: "Gabinete", price: 10000 },
+            { id: 1, name: "Gabinete", price: 1000, marca:"AMD"},
+            { id: 1, name: "Gabinete", price: 5000, marca:"Microsoft"},
+            { id: 1, name: "Gabinete", price: 60000, marca:"Razer"},
           ]);
         } else {
           rej("No hay productos");
